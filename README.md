@@ -9,7 +9,7 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/tanuj-nandkishor-patil
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=java" alt="Java" title="Java" height="40" />
-  <img src="https://skillicons.dev/icons?i=springboot" alt="Spring Boot" title="Spring Boot" height="40" />
+  <img src="https://skillicons.dev/icons?i=spring_boot" alt="Spring Boot" title="Spring Boot" height="40" />
   <img src="https://skillicons.dev/icons?i=spring" alt="Spring" title="Spring Framework" height="40" />
   <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" title="Node.js" height="40" />
   <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" height="40" />
