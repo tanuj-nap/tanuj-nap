@@ -1,16 +1,16 @@
 name: Update LeetCode stats in README
 
-#  → trigger on schedule, manual dispatch, and (optionally) on push:
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   schedule:
-    - cron:  '0 4 * * *'
+    - cron: '0 4 * * *'
   workflow_dispatch:
 
-#  → grant write permissions to contents so `git push` works
 permissions:
   contents: write
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -19,16 +19,26 @@ jobs:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: 📦 Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
       - name: 🐍 Fetch latest LeetCode stats and patch README
         env:
-          LC_USERNAME: tanujp15  # 👉 change if your LeetCode handle changes
+          LC_USERNAME: tanujp15
         run: |
           python - <<'PY'
-          import datetime, json, os, re, requests, sys
+          import datetime, os, re, sys
+          import requests
 
           username = os.getenv("LC_USERNAME", "tanujp15")
           api_url = f"https://leetcode-stats-api.herokuapp.com/{username}"
-
           try:
               payload = requests.get(api_url, timeout=15).json()
           except Exception as exc:
@@ -36,35 +46,30 @@ jobs:
 
           block = (
               "```text\n"
-              f"Total Solved: {payload['totalSolved']} of {payload['totalQuestions']}\n"
-              f"Easy: {payload['easySolved']} of {payload['totalEasy']}\n"
-              f"Medium: {payload['mediumSolved']} of {payload['totalMedium']}\n"
-              f"Hard: {payload['hardSolved']} of {payload['totalHard']}\n"
-              f"Acceptance Rate: {payload['acceptanceRate']}%\n"
-              f"Ranking: {payload['ranking']}\n"
-              f"Updated: {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}\n"
+              f"Total Solved: {payload.get('totalSolved')} of {payload.get('totalQuestions')}\n"
+              f"Easy: {payload.get('easySolved')} of {payload.get('totalEasy')}\n"
+              f"Medium: {payload.get('mediumSolved')} of {payload.get('totalMedium')}\n"
+              f"Hard: {payload.get('hardSolved')} of {payload.get('totalHard')}\n"
+              f"Acceptance Rate: {payload.get('acceptanceRate')}%\n"
+              f"Ranking: {payload.get('ranking')}\n"
+              f"Updated: {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}\n"
               "```"
           )
 
-          with open("README.md", "r", encoding="utf-8") as f:
-              readme = f.read()
-
-          pattern = r"<!--START_SECTION:leetcode-stats-->[\s\S]*?<!--END_SECTION:leetcode-stats-->"
+          readme = open("README.md", "r", encoding="utf-8").read()
+          pattern = r"<!--START_SECTION:leetcode-stats-->[\\s\\S]*?<!--END_SECTION:leetcode-stats-->"
           new_section = f"<!--START_SECTION:leetcode-stats-->\n{block}\n<!--END_SECTION:leetcode-stats-->"
           updated = re.sub(pattern, new_section, readme, flags=re.MULTILINE)
-
-          with open("README.md", "w", encoding="utf-8") as f:
-              f.write(updated)
+          open("README.md", "w", encoding="utf-8").write(updated)
           PY
 
-      - name: 🚀 Commit & push if README changed
+      - name: 🚀 Commit & push changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "github-actions[bot]"
-
           if [[ $(git status --porcelain) ]]; then
             git add README.md
-            git commit -m "chore: 🤖 auto‑update LeetCode stats"
+            git commit -m "chore: 🤖 auto-update LeetCode stats"
             git push
           else
             echo "No changes to commit"
