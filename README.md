@@ -10,15 +10,15 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/tanuj-nandkishor-patil
 <p align="center">
   <img src="https://skillicons.dev/icons?i=java" alt="Java" title="Java" height="40" />
   <img src="https://skillicons.dev/icons?i=springboot" alt="Spring Boot" title="Spring Boot" height="40" />
-  <img src="https://skillicons.dev/icons?i=spring" alt="Spring" title="Spring" height="40" />
+  <img src="https://skillicons.dev/icons?i=spring" alt="Spring" title="Spring Framework" height="40" />
   <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" title="Node.js" height="40" />
   <img src="https://skillicons.dev/icons?i=python" alt="Python" title="Python" height="40" />
   <img src="https://skillicons.dev/icons?i=django" alt="Django" title="Django" height="40" />
-  <img src="https://skillicons.dev/icons?i=react" alt="React" title="React" height="40" />
+  <img src="https://skillicons.dev/icons?i=react" alt="React" title="React.js" height="40" />
   <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" title="MySQL" height="40" />
   <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" title="PostgreSQL" height="40" />
   <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" title="MongoDB" height="40" />
-  <img src="https://skillicons.dev/icons?i=aws" alt="AWS" title="AWS" height="40" />
+  <img src="https://skillicons.dev/icons?i=aws" alt="AWS" title="AWS (Cloud Services)" height="40" />
   <img src="https://skillicons.dev/icons?i=git" alt="Git" title="Git" height="40" />
   <img src="https://skillicons.dev/icons?i=jenkins" alt="Jenkins" title="Jenkins" height="40" />
   <img src="https://skillicons.dev/icons?i=docker" alt="Docker" title="Docker" height="40" />
