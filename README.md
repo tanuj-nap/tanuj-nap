@@ -1,6 +1,6 @@
 # Hi there, I’m Tanuj Patil 👋
 
-I’m a passionate Software Developer who loves turning ideas into clean, maintainable code. I thrive on applying SOLID principles, writing thorough tests, and automating workflows to deliver reliable, high‑quality software—fast.  
+I’m a passionate Software Developer who loves turning ideas into clean, maintainable code. I thrive on applying SOLID principles, writing thorough tests, and automating workflows to deliver reliable, high-quality software—fast.  
 Connect with me on [LinkedIn](https://www.linkedin.com/in/tanuj-nandkishor-patil-9096ba347/).
 
 ---
@@ -28,19 +28,11 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/tanuj-nandkishor-patil
 
 ## 🚀 LeetCode Journey
 
-The stats below are automatically updated every day via a GitHub Actions workflow that fetches live data from my LeetCode profile.
-
-<!--START_SECTION:leetcode-stats-->
-```text
-Total Solved: 265 of 3548
-Easy: 95 of 876
-Medium: 147 of 1840
-Hard: 23 of 832
-Acceptance Rate: None%
-Ranking: 415466
-Updated: 2025-05-11 16:06 UTC
-```
-<!--END_SECTION:leetcode-stats-->
+<p align="center">
+  <a href="https://leetcode.com/u/tanujp15/" target="_blank">
+    <img src="https://leetcard.jacoblin.cool/tanujp15?theme=dark&ext=heatmap" alt="LeetCode Stats Card" />
+  </a>
+</p>
 
 ---
 
