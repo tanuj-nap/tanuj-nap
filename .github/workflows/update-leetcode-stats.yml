@@ -1,0 +1,66 @@
+name: Update LeetCode stats in README
+
+on:
+  # Runs every day at 04:00 UTC and can be triggered manually
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Fetch latest LeetCode stats and patch README
+        env:
+          LC_USERNAME: tanujp15  # 👉 change if your LeetCode handle changes
+        run: |
+          python - <<'PY'
+          import datetime, json, os, re, requests, sys
+
+          username = os.getenv("LC_USERNAME", "tanujp15")
+          api_url = f"https://leetcode-stats-api.herokuapp.com/{username}"
+
+          try:
+              payload = requests.get(api_url, timeout=15).json()
+          except Exception as exc:
+              sys.exit(f"Failed to fetch LeetCode stats: {exc}")
+
+          block = (
+              "```text\n"
+              f"Total Solved: {payload['totalSolved']} of {payload['totalQuestions']}\n"
+              f"Easy: {payload['easySolved']} of {payload['totalEasy']}\n"
+              f"Medium: {payload['mediumSolved']} of {payload['totalMedium']}\n"
+              f"Hard: {payload['hardSolved']} of {payload['totalHard']}\n"
+              f"Acceptance Rate: {payload['acceptanceRate']}%\n"
+              f"Ranking: {payload['ranking']}\n"
+              f"Updated: {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}\n"
+              "```"
+          )
+
+          with open("README.md", "r", encoding="utf-8") as f:
+              readme = f.read()
+
+          pattern = r"<!--START_SECTION:leetcode-stats-->[\s\S]*?<!--END_SECTION:leetcode-stats-->"
+          new_section = f"<!--START_SECTION:leetcode-stats-->\n{block}\n<!--END_SECTION:leetcode-stats-->"
+          updated = re.sub(pattern, new_section, readme, flags=re.MULTILINE)
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(updated)
+          PY
+
+      - name: 🚀 Commit & push if README changed
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "github-actions[bot]"
+
+          if [[ $(git status --porcelain) ]]; then
+            git add README.md
+            git commit -m "chore: 🤖 auto‑update LeetCode stats"
+            git push
+          else
+            echo "No changes to commit"
+          fi
