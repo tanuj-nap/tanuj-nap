@@ -1,11 +1,16 @@
 name: Update LeetCode stats in README
 
+#  → trigger on schedule, manual dispatch, and (optionally) on push:
 on:
-  # Runs every day at 04:00 UTC and can be triggered manually
+  push:
+    branches: [ main ]
   schedule:
-    - cron: "0 4 * * *"
+    - cron:  '0 4 * * *'
   workflow_dispatch:
 
+#  → grant write permissions to contents so `git push` works
+permissions:
+  contents: write
 jobs:
   update-readme:
     runs-on: ubuntu-latest
