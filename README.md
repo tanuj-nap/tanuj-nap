@@ -26,20 +26,20 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/tanuj-nandkishor-patil
 
 ---
 
-## 📊 LeetCode Progress
+## 🚀 LeetCode Journey
 
-<p align="center">
+<div align="center">
   <a href="https://leetcode.com/u/tanujp15/" target="_blank">
-    <img src="https://leetcode-stats.vercel.app/api?username=tanujp15&theme=light&show_icons=true&count_private=true" alt="LeetCode Stats" />
+    <img src="https://leetcode-stats.vercel.app/api?username=tanujp15&theme=leetcode&show_icons=true&count_private=true" alt="LeetCode Stats" />
   </a>
-</p>
+</div>
 
-<details>
-  <summary>📂 See Top Languages</summary>
-  <br/>
-  <p align="center">
-    <img src="https://leetcode-stats.vercel.app/api/top-langs/?username=tanujp15&layout=compact&theme=light" alt="Top Languages" />
-  </p>
-</details>
+<div align="center">
+  <a href="https://leetcode.com/u/tanujp15/" target="_blank">
+    <img src="https://leetcode-stats.vercel.app/api/top-langs/?username=tanujp15&layout=compact&theme=leetcode" alt="Top Languages" />
+  </a>
+</div>
+
+---
 
 Feel free to explore my repos and connect with me! 😊
