@@ -29,13 +29,19 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/tanuj-nandkishor-patil
 ## 🚀 LeetCode Journey
 
 <div align="center">
-  <a href="https://leetcode.com/u/tanujp15/" target="_blank">
-    <img src="https://leetcode-stats.vercel.app/api?username=tanujp15&theme=dark&show_icons=true&count_private=true" alt="LeetCode Stats" />
-  </a>
+  <img src="https://leetcard.jacoblin.cool/tanujp15?theme=dark&ext=heatmap" alt="LeetCode Heatmap" />
 </div>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Total%20Solved-265%20of%203548-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="Total Solved" />
+  <img src="https://img.shields.io/badge/Easy-95%20of%20876-44D05A?style=for-the-badge" alt="Easy Solved" />
+  <img src="https://img.shields.io/badge/Medium-147%20of%201840-F9A825?style=for-the-badge" alt="Medium Solved" />
+  <img src="https://img.shields.io/badge/Hard-23%20of%20832-E91E63?style=for-the-badge" alt="Hard Solved" />
+  <img src="https://img.shields.io/badge/Acceptance-65.11%25-1785F3?style=for-the-badge" alt="Acceptance Rate" />
+</p>
+
 <div align="center">
-  <img src="https://leetcard.jacoblin.cool/tanujp15?theme=dark&ext=heatmap" alt="LeetCode Heatmap" />
+  <a href="https://leetcode.com/u/tanujp15/" target="_blank">View full profile on LeetCode →</a>
 </div>
 
 ---
