@@ -1,6 +1,6 @@
 # Hi there, I’m Tanuj Patil 👋
 
-I’m a passionate Software Developer who loves turning ideas into clean, maintainable code. I thrive on applying SOLID principles, writing thorough tests, and automating workflows to deliver reliable, high-quality software—fast.  
+I’m a passionate Software Developer who loves turning ideas into clean, maintainable code. I thrive on applying SOLID principles, writing thorough tests, and automating workflows to deliver reliable, high‑quality software—fast.  
 Connect with me on [LinkedIn](https://www.linkedin.com/in/tanuj-nandkishor-patil-9096ba347/).
 
 ---
@@ -28,21 +28,14 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/tanuj-nandkishor-patil
 
 ## 🚀 LeetCode Journey
 
-<div align="center">
-  <img src="https://leetcard.jacoblin.cool/tanujp15?theme=dark&ext=heatmap" alt="LeetCode Heatmap" />
-</div>
+The stats below are automatically updated every day via a GitHub Actions workflow that fetches live data from my LeetCode profile.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Total%20Solved-265%20of%203548-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="Total Solved" />
-  <img src="https://img.shields.io/badge/Easy-95%20of%20876-44D05A?style=for-the-badge" alt="Easy Solved" />
-  <img src="https://img.shields.io/badge/Medium-147%20of%201840-F9A825?style=for-the-badge" alt="Medium Solved" />
-  <img src="https://img.shields.io/badge/Hard-23%20of%20832-E91E63?style=for-the-badge" alt="Hard Solved" />
-  <img src="https://img.shields.io/badge/Acceptance-65.11%25-1785F3?style=for-the-badge" alt="Acceptance Rate" />
-</p>
-
-<div align="center">
-  <a href="https://leetcode.com/u/tanujp15/" target="_blank">View full profile on LeetCode →</a>
-</div>
+<!--START_SECTION:leetcode-stats-->
+```text
+Loading LeetCode data...  
+(If you’re seeing this, the workflow is still running or you’re viewing a cached version.)
+```
+<!--END_SECTION:leetcode-stats-->
 
 ---
 
