@@ -30,14 +30,12 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/tanuj-nandkishor-patil
 
 <div align="center">
   <a href="https://leetcode.com/u/tanujp15/" target="_blank">
-    <img src="https://leetcode-stats.vercel.app/api?username=tanujp15&theme=leetcode&show_icons=true&count_private=true" alt="LeetCode Stats" />
+    <img src="https://leetcode-stats.vercel.app/api?username=tanujp15&theme=dark&show_icons=true&count_private=true" alt="LeetCode Stats" />
   </a>
 </div>
 
 <div align="center">
-  <a href="https://leetcode.com/u/tanujp15/" target="_blank">
-    <img src="https://leetcode-stats.vercel.app/api/top-langs/?username=tanujp15&layout=compact&theme=leetcode" alt="Top Languages" />
-  </a>
+  <img src="https://leetcard.jacoblin.cool/tanujp15?theme=dark&ext=heatmap" alt="LeetCode Heatmap" />
 </div>
 
 ---
