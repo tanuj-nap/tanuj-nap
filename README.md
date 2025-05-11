@@ -32,13 +32,13 @@ The stats below are automatically updated every day via a GitHub Actions workfl
 
 <!--START_SECTION:leetcode-stats-->
 ```text
-Total Solved: 265 of 3548
+Total Solved: 265 of 3548
 Easy: 95 of 876
 Medium: 147 of 1840
 Hard: 23 of 832
-Acceptance Rate: 65.11%
+Acceptance Rate: None%
 Ranking: 415466
-Updated: 2025-05-11 15:50 UTC
+Updated: 2025-05-11 16:06 UTC
 ```
 <!--END_SECTION:leetcode-stats-->
 
