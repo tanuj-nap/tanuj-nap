@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: 🐍 Setup Python
         uses: actions/setup-python@v4
@@ -38,7 +40,7 @@ jobs:
           import requests
 
           username = os.getenv("LC_USERNAME", "tanujp15")
-          api_url = f"https://leetcode-stats-api.herokuapp.com/{username}"
+          api_url = f"https://leetcode-stats-api.vercel.app/{username}"
           try:
               payload = requests.get(api_url, timeout=15).json()
           except Exception as exc:
@@ -56,11 +58,14 @@ jobs:
               "```"
           )
 
-          readme = open("README.md", "r", encoding="utf-8").read()
-          pattern = r"<!--START_SECTION:leetcode-stats-->[\\s\\S]*?<!--END_SECTION:leetcode-stats-->"
+          path = "README.md"
+          with open(path, "r", encoding="utf-8") as f:
+              readme = f.read()
+          pattern = r"<!--START_SECTION:leetcode-stats-->[\s\S]*?<!--END_SECTION:leetcode-stats-->"
           new_section = f"<!--START_SECTION:leetcode-stats-->\n{block}\n<!--END_SECTION:leetcode-stats-->"
           updated = re.sub(pattern, new_section, readme, flags=re.MULTILINE)
-          open("README.md", "w", encoding="utf-8").write(updated)
+          with open(path, "w", encoding="utf-8") as f:
+              f.write(updated)
           PY
 
       - name: 🚀 Commit & push changes
