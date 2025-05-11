@@ -1,10 +1,8 @@
-<p align="center">
-  <img src="https://github.com/tanujp15.png?size=150" alt="Tanuj Patil" width="150" />
-</p>
+
 
 # Hi there, I’m Tanuj Patil 👋
 
-I’m a passionate Software Developer who loves turning ideas into clean, maintainable code. I thrive on applying SOLID principles, writing thorough tests, and automating workflows to deliver reliable, high-quality software—fast.  
+I’m a passionate Software Developer who loves turning ideas into clean, maintainable code.  
 Connect with me on [LinkedIn](https://www.linkedin.com/in/tanuj-nandkishor-patil-9096ba347/).
 
 ---
