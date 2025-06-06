@@ -1,6 +1,6 @@
 # Hi there, I’m Tanuj Patil 👋
 
-I’m a passionate Software Developer who loves turning ideas into clean, maintainable code. I thrive on applying SOLID principles, writing thorough tests, and automating workflows to deliver reliable, high-quality software—fast.  
+I’m a passionate Software Developer who loves turning ideas into clean, maintainable code. I thrive on applying SOLID principles, writing thorough tests, and automating workflows to deliver reliable, high-quality software.  
 Connect with me on [LinkedIn](https://www.linkedin.com/in/tanuj-nandkishor-patil-9096ba347/).
 
 ---
